@@ -3,5 +3,7 @@ applications:
 - name: node-cf-sample-app
 
   memory: 128M
+  
+  instance: 1
 
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
