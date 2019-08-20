@@ -1,7 +1,11 @@
 applications:
 
-- name: node-cf-sample-app
+- name: sample-node-app
 
   memory: 128M
 
-  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  stack:
+    - cflinuxfs3
+
+  buildpacks:
+    - nodejs_buildpack
