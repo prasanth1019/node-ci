@@ -3,9 +3,8 @@ applications:
 - name: sample-node-app
 
   memory: 128M
-
-  stack:
-    - cflinuxfs3
+  
+  instance: 1
 
   buildpacks:
     - nodejs_buildpack
